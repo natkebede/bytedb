@@ -1,0 +1,8 @@
+# This file was automatically generated
+name: root_db
+type: postgres
+options:
+  host: bytedbv3-root_db-1
+  port: 5432
+  database: root_db
+  schema: public

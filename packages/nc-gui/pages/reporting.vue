@@ -1,0 +1,23 @@
+<!-- pages/workspace.vue -->
+<template>
+    <div class="iframe-container">
+      <iframe
+        :src="iframeSrc"
+        frameborder="0"
+        style="width: 100%; height: 100vh;"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </template>
+  
+  <script setup lang="ts">
+  // Define the source URL for the iframe
+  const iframeSrc = 'http://localhost:3001' // Replace with your URL
+  </script>
+  
+  <style scoped>
+  .iframe-container {
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+  }
+  </style>
