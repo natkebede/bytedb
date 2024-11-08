@@ -7,14 +7,6 @@ title: Welcome to Evidence
   This page can be found in your project at `/pages/index.md`. Make a change to the markdown file and save it to see the change take effect in your browser.
 </Details>
 
-```sql categories
-  select * from root_db.public.nc_fd04__Person
-```
-
-<Dropdown data={categories} name=category value=category>
-    <DropdownOption value="%" valueLabel="All Categories"/>
-</Dropdown>
-
 <Dropdown name=year>
     <DropdownOption value=% valueLabel="All Years"/>
     <DropdownOption value=2019/>

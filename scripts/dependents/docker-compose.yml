@@ -136,6 +136,18 @@ services:
       JUPYTER_TOKEN: "your_secure_token"
     networks:
       - app-network
+  redis:
+    image: redis:7.2-bookworm
+    expose:
+      - 6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 30s
+      retries: 50
+      start_period: 30s
+    networks:
+      - app-network
 
 volumes:
   db_data: {}
